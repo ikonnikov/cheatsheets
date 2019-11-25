@@ -1,0 +1,9 @@
+Saving model:
+df = pd.DataFrame({'A':[1,2,3,7,9,15,16,1,5,6,2,4,8,9],'B':[15,12,10,11,8,14,17,20,4,12,4,5,17,19],'C':['Y','Y','Y','Y','N','N','N','Y','N','Y','N','N','Y','Y']})
+df[['A','B']] = min_max_scaler.fit_transform(df[['A','B']])  
+pickle.dump(min_max_scaler, open("scaler.pkl", 'wb'))
+
+Loading saved model:
+scalerObj = pickle.load(open("scaler.pkl", 'rb'))
+df_test = pd.DataFrame({'A':[25,67,24,76,23],'B':[2,54,22,75,19]})
+df_test[['A','B']] = scalerObj.transform(df_test[['A','B']])
