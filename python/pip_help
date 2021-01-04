@@ -1,0 +1,2 @@
+# Windows version to upgrade all Python packages
+for /F "skip=2 delims= " %i in ('pip list --outdated') do pip install --upgrade %i
