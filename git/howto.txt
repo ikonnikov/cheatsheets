@@ -1,0 +1,6 @@
+1. Update local copy and safe your changes
+  git branch                    ; check your local branchname
+  git stash                     ; safe your local changes
+  git pull origin <branchname>  ; update local copy (fetch + merge)
+  git stash apply               ; fillback your local changes
+  
