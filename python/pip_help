@@ -6,3 +6,6 @@ $ pip list --outdated
 
 # How to install a package through the proxy HOST:PORT with CORP-named domain
 $ python -m pip install --upgrade --proxy=http://corp%5CLOGIN:PASSWORD@HOST:PORT PACKAGENAME
+# or
+$ set http_proxy=http://corp%5CLOGIN:PASSWORD@HOST:PORT
+$ set https_proxy=https://corp%5CLOGIN:PASSWORD@HOST:PORT
