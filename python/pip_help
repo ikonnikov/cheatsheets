@@ -2,4 +2,7 @@
 for /F "skip=2 delims= " %i in ('pip list --outdated') do pip install --upgrade %i
 
 # How to list an outdated packages
-pip list --outdated
+$ pip list --outdated
+
+# How to install a package through CORP-named proxy
+$ python -m pip install --upgrade --proxy=http://corp%5CLOGIN:PASSWORD@HOST:PORT PACKAGENAME
