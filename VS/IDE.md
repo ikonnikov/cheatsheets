@@ -6,6 +6,6 @@
 2. In the configuration file, find the <system.net> block, and then add this code:
 ```
 <defaultProxy enabled="true">
-    <proxy bypassonlocal="True" proxyaddress="http://yourproxy:port"/>
+    <proxy bypassonlocal="true" proxyaddress="http://yourproxy:port"/>
 </defaultProxy>
 ```
